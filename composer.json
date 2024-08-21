@@ -1,0 +1,13 @@
+{
+    "name": "usuario/mathblast",
+    "description": "Mathblast Project",
+    "authors": [
+        {
+            "name": "Alexandersito",
+            "email": "018101396i@uandina.edu.pe"
+        }
+    ],
+    "require": {
+        "cboden/ratchet": "^0.4.4"
+    }
+}
