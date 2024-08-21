@@ -1,6 +1,9 @@
 # Usa una imagen base de PHP
 FROM php:7.4-apache
 
+# Habilitar mod_rewrite
+RUN a2enmod rewrite
+
 # Copia el contenido de tu proyecto al directorio de Apache
 COPY . /var/www/html/
 
