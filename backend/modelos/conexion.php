@@ -17,16 +17,18 @@
 
 // }
 
-Class Conexion
+class Conexion
 {
+
     public static function conectar()
     {
-        $link = new PDO("mysql:host=" .getenv('DB_HOST'). ";dbname=" .getenv('DB_NAME'),
-            getenv('DB_USER'),
-            getenv('DB_PASSWORD'));
+        $link = new PDO("mysql:host=boceosgqbwef7ipdxxkg-mysql.services.clever-cloud.com;dbname=boceosgqbwef7ipdxxkg",
+            "uj2legbumhmpl7fq",
+            "HsaWa6DLRiji22jdYq5n");
 
         $link->exec("set names utf8");
 
         return $link;
     }
+
 }
