@@ -16,7 +16,7 @@
 
 // }
 
-class Conexion
+Class Conexion
 {
     public static function conectar()
     {
