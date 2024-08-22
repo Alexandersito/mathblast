@@ -21,7 +21,7 @@ Class Conexion
     public static function conectar()
     {
         $link = new PDO("mysql:host=" .getenv('DB_HOST'). ";dbname=" .getenv('DB_NAME'),
-            getenv('DB_USERNAME'),
+            getenv('DB_USER'),
             getenv('DB_PASSWORD'));
 
         $link->exec("set names utf8");
