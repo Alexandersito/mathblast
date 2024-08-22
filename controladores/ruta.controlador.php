@@ -4,11 +4,13 @@ class ControladorRuta
 {
     public static function ctrRuta()
     {
-        return "http://localhost/mathblast/";
+        return "https://mathblast.onrender.com/";
+        // return "http://localhost/mathblast/";
     }
 
     public static function ctrServidor()
     {
-        return "http://localhost/mathblast/backend/";
+        return "https://mathblast.onrender.com/backend/";
+        // return "http://localhost/mathblast/backend/";
     }
 }
