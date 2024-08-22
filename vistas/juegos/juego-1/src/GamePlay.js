@@ -638,7 +638,23 @@ GamePlayManager = {
     }
 }
 
-var game = new Phaser.Game(1136, 640, Phaser.CANVAS);
+const config = {
+    type: Phaser.AUTO,
+    width: 1136,
+    height: 640,
+    scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH
+    },
+    scene: {
+        preload: preload,
+        create: create,
+        update: update
+    }
+};
+
+// var game = new Phaser.Game(1136, 640, Phaser.CANVAS, config);
+var game = new Phaser.Game(config, Phaser.CANVAS);
 
 game.state.add("gameplay", GamePlayManager);
 game.state.start("gameplay");
