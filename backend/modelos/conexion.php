@@ -21,7 +21,7 @@ Class Conexion
 {
     public static function conectar()
     {
-        $link = new PDO("mysql:host=" . getenv('DB_HOST') . ";dbname=" . getenv('DB_DATABASE'),
+        $link = new PDO("mysql:host=" .getenv('DB_HOST'). ";dbname=" .getenv('DB_NAME'),
             getenv('DB_USERNAME'),
             getenv('DB_PASSWORD'));
 
